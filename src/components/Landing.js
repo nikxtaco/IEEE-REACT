@@ -4,6 +4,8 @@ import Navigation_bar from './Navigation_bar.js';
 import Photos from './Gallery.js';
 import Footer from './Footer.js';
 import "../css/landing.css";
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 
 function Landing() {
