@@ -1,10 +1,11 @@
 import React from 'react';
-import { Navbar,  NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar,  NavDropdown, Nav, Form, FormControl, Button, Container } from 'react-bootstrap';
 import "../css/navbar.css";
-const Navigation_bar= () =>{
+const Navigation= () =>{
 return(
-  <div class="container">
-    <Navbar collapseOnSelect expand="s" bg="light" variant="light">
+  
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Container class="cont">
   <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
@@ -26,9 +27,9 @@ return(
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
+  </Container>
 </Navbar>
-  </div>
 )
 }
 
-export default Navigation_bar
+export default Navigation

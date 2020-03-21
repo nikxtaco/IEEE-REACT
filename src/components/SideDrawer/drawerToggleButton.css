@@ -1,0 +1,11 @@
+.toggle_button{
+    border: none;
+    background-color: white;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+
+}
+.toggle_button:focus{
+    outline: none;
+}

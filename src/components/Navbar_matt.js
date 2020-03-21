@@ -14,14 +14,14 @@ const Navbar = () => {
 
 	return (
 
-		<div class="row">
-			<div class="navbar-fixed">
+		<div className="row">
+			<div className="navbar-fixed">
 				<div className='Navbar'>
-					<nav className="nav-wrapper white accent-1">
-	
-							{/*<a href="https://google.com" id="logo" style={{'color':'black',}} class="left col l2 ">Logo</a>
-							<a href="https://google.com" data-target="slide-out" class="sidenav-trigger" style={{'color':'black'}}><i class="material-icons">Menu</i></a>*/}
-							<div className="container">
+					<nav className="nav-wrapper white">
+					<div className='container'>
+						{/*<a href="https://google.com" id="logo" style={{'color':'black',}} class="left col 1 ">Logo</a>*/}
+							<a href="#" data-target="slide-out" class="sidenav-trigger" style={{'color':'red'}}><i class="material-icons">menu</i></a>
+							
 								<ul className="right hide-on-small-and-down">
 									<li><a href='/' style={{'color':'rgb(29, 60, 98)'}}>About</a></li>
 									<li><a href='/' style={{'color':'rgb(29, 60, 98)'}}>Home</a></li>
@@ -30,7 +30,7 @@ const Navbar = () => {
 									<li><a href='/' style={{'color':'rgb(29, 60, 98)'}}>Our Team</a></li>
 									<li><a href='/' style={{'color':'rgb(29, 60, 98)'}}>Contact</a></li>
 								</ul>
-							</div>
+						</div>	
 			
 					</nav>
 
