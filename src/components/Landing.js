@@ -10,13 +10,17 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 
-function Landing() {
+
+const Landing = props =>{
   return (
     <body>
-    <div id="landing">
+    
+    <div className="landing">
+    
     <div className="carousel"><Carousel/></div>
-    <div className="gallery"><Photos/></div>
+   <div className="gallery"><Photos/></div>
     <div className="footer"><Footer/></div>
+  
 
     </div>
     </body>

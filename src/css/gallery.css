@@ -7,3 +7,7 @@
 #bottom_margin{
     margin-bottom:1.5em;
 }
+
+#gallery{
+    z-index: 0;
+}
