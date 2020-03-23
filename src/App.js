@@ -14,11 +14,11 @@ class App extends Component {
   
   drawerToggleClickHandler = () =>{
     this.setState((prevState)=>{
-      return {SideDrawerOpen: !prevState.SideDrawerOpen};
+      return {SideDrawerOpen: !prevState.SideDrawerOpen}; // for opening the sidebar
     });
   };
   closeToggleClickHandler= ()=>{
-    this.setState({SideDrawerOpen: false});
+    this.setState({SideDrawerOpen: false}); // for closing the sidebar
   }
   render(){
   let adrawer;  
