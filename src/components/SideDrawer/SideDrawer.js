@@ -7,8 +7,8 @@ const sideDrawer= props=>(
 
     <nav className="side-drawer">
         <div className="close_sd">
-            <button class="closer" onClick={props.closeClickHandler}>
-                <i className="material-icons">chevron_left</i>
+            <button className="closer" onClick={props.closeClickHandler}>
+                <i className="material-icons itag">chevron_right</i>
             </button>
         </div>
         <ul>

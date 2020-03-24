@@ -6,12 +6,11 @@
     display: flex;
     flex-direction: column;
     top:0;
-    left: 0;
+    right: 0;
     width: 40%;
     max-width: 400px;
     z-index: 200;
     overflow-y: auto;
-    
 }
 
 .side-drawer a{
@@ -40,5 +39,6 @@
     align-items: center;
     background: transparent;
     cursor: pointer;
-    float: right;
+    float: left;
 }
+

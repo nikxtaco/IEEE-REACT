@@ -7,6 +7,10 @@
     background: white;
     height: 56px;
     z-index:5;
+    padding: 4rem;
+    
+    
+
 
 }
 .toolbar_navigation{
@@ -15,6 +19,8 @@
     height: 100%;
     align-items: center;
     padding: 0 1rem;
+    box-shadow: none;
+    
 }
 .drawer_toggle{
     align-items: center;
@@ -59,4 +65,26 @@
 .toolbar_navigation_items a:active{
     color: red;
     text-decoration: none;
+}
+
+@media(max-width: 768px){
+    .toolbar_navigation_items{
+        display: none;
+    }
+    
+    .toolbar_a{
+
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: white;
+        height: 56px;
+        z-index:5;
+        padding: 0;
+        
+        
+    
+    
+    }
 }
