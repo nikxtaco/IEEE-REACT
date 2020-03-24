@@ -8,7 +8,7 @@ const About = () => {
         <div className="col s6">
          <div className="card light-blue darken-4">
            <div className="card-image">
-             <img src={mec} />
+             <img src={mec} alt=""/>
              <span className="card-title">About MEC</span>
            </div>
            <div className="card-content white-text">
