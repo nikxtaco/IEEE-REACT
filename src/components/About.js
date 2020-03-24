@@ -19,7 +19,7 @@ const About = () => {
        <div className="col s6">
          <div className="card light-blue darken-4">
            <div className="card-image">
-             <img src={sb} />
+             <img src={sb} alt=""/>
              <span className="card-title">About SB</span>
            </div>
            <div className="card-content white-text">
