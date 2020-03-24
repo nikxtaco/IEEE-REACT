@@ -1,6 +1,6 @@
 import React from 'react';
 //import Toolbar from './Toolbar/Toolbar'
-import Carousel from './Carousel.js';
+
 //import Navbar from './Navbar_matt';
 ///import TestNav from './TestNav';
 import Photos from './Gallery.js';
