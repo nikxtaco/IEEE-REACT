@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar.js'
-import Carousel from './Carousel.js'
+import Parallax from './Parallax.js'
 import Missionvision from './Missionvision.js'
 import About from './About.js'
 import "../css/landing.css"
@@ -10,7 +10,7 @@ function Landing() {
     <div id="landing">
       
     <div className="navbar"><Navbar/></div>
-    <div className="carousel"><Carousel/></div>
+    <div className="parallax"><Parallax/></div>
     <div className="mission"><Missionvision/></div>
     <div className="about"><About/></div>
     </div>
@@ -19,4 +19,3 @@ function Landing() {
 }
 
 export default Landing;
-
