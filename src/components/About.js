@@ -1,6 +1,6 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
-import '../css/about.css'
+// import '../css/about.css'
 // import M from 'materialize-css/dist/js/materialize.min.js';
 import mec from '../MEC.jpeg'
 import sb from '../SB.jpg'
