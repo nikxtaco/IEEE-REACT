@@ -1,16 +1,19 @@
 import React from 'react';
-import { useEffect } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min.js';
+// import '../css/about.css'
+// import M from 'materialize-css/dist/js/materialize.min.js';
 import mec from '../MEC.jpeg'
 import sb from '../SB.jpg'
 const About = () => {
+  var stcard = {
+    "border-radius" : "30px"
+  }
     return(
    <div className="row">
-        <div className="col s6">
-         <div className="card light-blue darken-4">
-           <div className="card-image">
-             <img src={mec} />
+        <div  className="col s12 m6">
+         <div style={stcard} className="card light-blue darken-4">
+           <div style={stcard} className="card-image">
+             <img style={stcard} src={mec} />
              <span className="card-title">About MEC</span>
            </div>
            <div className="card-content white-text">
@@ -18,11 +21,11 @@ const About = () => {
            </div>
          </div>
        </div>
-       <div className="col s6">
-         <div className="card light-blue darken-4">
-           <div className="card-image">
-             <img src={sb} />
-             <span className="card-title">About SB</span>
+       <div className="col s12 m6">
+         <div style={stcard} className="card light-blue darken-4">
+           <div style={stcard} className="card-image">
+             <img style={stcard} src={sb} />
+             <span className="card-title">About IEEE MEC SB</span>
            </div>
            <div className="card-content white-text">
              <p>Blue skies and ignited minds, the student branch of IEEE at Govt. Model Engineering College, the IEEE SB MEC in professional parlance, is on a perfect take-off with a growing number of dedicated and vibrant volunteers. The SB has forged itself through thick and thin, successfully proving their mettle, over the years. Today, with a crew of 150 plus members, IEEE SB MEC stands out as one among the best of all student branches in the hub.</p>
