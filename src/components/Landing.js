@@ -6,10 +6,10 @@ import Carousel from './Carousel.js';
 import Photos from './Gallery.js';
 import Footer from './Footer.js';
 import "../css/landing.css";
-  import Missionvision from './Missionvision.js'
+import Missionvision from './Missionvision.js'
 import About from './About.js'
 import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min.js';
+// import M from 'materialize-css/dist/js/materialize.min.js';
 
 
 

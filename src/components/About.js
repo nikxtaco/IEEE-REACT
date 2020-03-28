@@ -10,7 +10,7 @@ const About = () => {
   }
     return(
    <div className="row">
-        <div  className="col s12 m6">
+        <div  className="col s12 m7">
          <div style={stcard} className="card light-blue darken-4">
            <div style={stcard} className="card-image">
              <img style={stcard} src={mec} />
@@ -21,7 +21,7 @@ const About = () => {
            </div>
          </div>
        </div>
-       <div className="col s12 m6">
+       <div className="col s12 m7">
          <div style={stcard} className="card light-blue darken-4">
            <div style={stcard} className="card-image">
              <img style={stcard} src={sb} />
