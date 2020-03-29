@@ -6,7 +6,7 @@ const Missionvision = () => {
     }
     return (
     <div className="row light-blue darken-4">
-        <div className="col s4">
+        <div className="col l4 s12 m4">
             <div className="light-blue darken-4">
             <i className="large material-icons white-text">priority_high</i>
                 <div className="container white-text">
@@ -15,7 +15,7 @@ const Missionvision = () => {
                 </div>
             </div>
         </div>
-        <div className="col s4">
+        <div className="col l4 s12 m4">
             <div className="light-blue darken-4">
                 <i className="large material-icons white-text">visibility</i>
                 <div className="container white-text">
@@ -24,7 +24,7 @@ const Missionvision = () => {
                 </div>
             </div>
         </div>
-        <div className="col s4">
+        <div className="col l4 s12 m4">
             <div className="light-blue darken-4">
                 <i className="large material-icons white-text">room</i>
                 <div className="container white-text">
