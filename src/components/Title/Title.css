@@ -1,3 +1,25 @@
 .title{
     margin-top: 6.5rem;
 }
+
+.col1{
+    display:grid;
+    grid-column: 1;
+}
+
+.col2{
+    display:grid;
+    grid-column: 2;
+}
+
+.heading_img{
+    width:80%;
+}
+
+.main_img{
+    width:100%;
+}
+
+.text{
+    margin-top:2em;
+}
