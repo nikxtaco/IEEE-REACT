@@ -9,10 +9,6 @@ import "../css/landing.css";
 import Missionvision from './Missionvision.js'
 import About from './About.js'
 import 'materialize-css/dist/css/materialize.min.css';
-<<<<<<< HEAD
-// import M from 'materialize-css/dist/js/materialize.min.js';
-=======
->>>>>>> 1c1fb91121dd27f9a0a49c87268d73088d158075
 
 import Title from './Title/Title.js';
 
