@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class events extends Component {
+class execom extends Component {
   render() {
     return (
         <div>
-          <h2>events</h2>
+          <h2>execom</h2>
         </div>
     );
   }
 }
 
-export default events;
+export default execom;
