@@ -7,7 +7,7 @@ import Events from  './components/Events/Events.js'
 import Contacts from  './components/Contacts/Contacts.js'
 import Achievements from './components/Achievements/Achievements.js'
 import SideDrawer from './components/SideDrawer/SideDrawer.js'
-import {Router, Route}
+import {Router, Route} from 'react-router-dom'
 
 
 class App extends Component {
