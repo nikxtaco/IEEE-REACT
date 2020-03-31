@@ -3,32 +3,64 @@ import "../css/footer.css"
 
 function Landing() {
   return (
-    <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    <div id="top_margin" class=" light-blue darken-4">
+
+    <div className='contact container' id="centre_mobile">
+      <div className="row" id="contact">
+        <div className="col s12 m4">
+          <h4 className='text-darken-3' id="bottom_margin">Connect with us</h4>
+          <form>
+            <div className="input-field">
+              <input type="text" name='name' />
+              <label htmlFor="name">Your Name</label>
+            </div>
+            <div className="input-field">
+              <input type="email" name='email' />
+              <label htmlFor="email">Your email</label>
+            </div>
+            <div className="input-field">
+              <input type="text" name='number' />
+              <label htmlFor="number">Your Phone Number</label>
+            </div>
+          </form>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
+        <div className="col s12 m4 center-align" id='message-box'>
+        <div className="message_box">
+					
+					</div>
+						</div>
+          
+
+
+        <div className="col s12 m4 margin_top_mobile">
+          <h4 id="bottom_margin">Follow Us</h4>
+          <div className="col s12 m10">
+
+          <div className="row">
+            <a href=""  style={{'color':'#C33427'}} id="icon_space"><i className="fab circle fa-facebook"></i></a>
+            <a href=""  style={{'color':'#C33427'}} id="icon_space"><i className="fab circle fa-twitter"></i></a>
+            <a href=""  style={{'color':'#C33427'}} id="icon_space"><i className="fab circle fa-linkedin"></i></a>
+            <a href=""  style={{'color':'#C33427'}} id="icon_space"><i className="fab circle fa-google-plus"></i></a>
+            <a href=""  style={{'color':'#C33427'}} id="icon_space"><i className="fab circle fa-pinterest"></i></a>
+          </div>
+
+          <div className="row margin_top_mobile">
+            <h4>Contact</h4>
+            <p>johndoe@gmail.com</p>
+            <p>98979986475</p>
+          </div>
         </div>
+</div>
+
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      © 2020 Copyright
-      </div>
+
+    <div className="extra_bottom">
+
     </div>
-  </footer>
-      
-  );
+
+    </div>
+  )
 }
 
 export default Landing;

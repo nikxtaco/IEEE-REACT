@@ -8,10 +8,10 @@ const About = () => {
   }
     return(
    <div className="row">
-      <div className="col s6">
-         <div className="card light-blue darken-4">
-           <div className="card-image">
-             <img src={mec} alt=""/>
+      <div className="col s12 m12 l6">
+         <div style={stcard} className="card light-blue darken-4">
+           <div style={stcard} className="card-image">
+             <img style={stcard} src={mec} alt=""/>
              <span className="card-title">About MEC</span>
            </div>
            <div className="card-content white-text">
@@ -19,10 +19,10 @@ const About = () => {
            </div>
          </div>
        </div>
-       <div className="col s6">
-         <div className="card light-blue darken-4">
-            <div className="card-image">
-             <img src={sb} alt=""/>
+       <div className="col s12 m12 l6">
+         <div style={stcard} className="card light-blue darken-4">
+            <div style={stcard} className="card-image">
+             <img style={stcard} src={sb} alt=""/>
             <div/>
              <span className="card-title">About SB</span>
            </div>
