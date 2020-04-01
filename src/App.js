@@ -7,20 +7,45 @@ import Events from  './components/Events/Events.js'
 import Contacts from  './components/Contacts/Contacts.js'
 import Achievements from './components/Achievements/Achievements.js'
 import SideDrawer from './components/SideDrawer/SideDrawer.js'
-import {Router, Route, browserHistory} from 'react-router-dom'
-
-
+import {BrowserRouter, Route} from 'react-router-dom'
+import Main from './components/Main/Main.js';
+import Footer from './components/Footer.js' 
+import Gallery from './components/Gallery.js'
 class App extends Component {
+  state={
+    SideDrawerOpen: false
+  }
+  
+  drawerToggleClickHandler = () =>{
+    this.setState((prevState)=>{
+      return {SideDrawerOpen: !prevState.SideDrawerOpen}; // for opening the sidebar
+    });
+  };
+  closeToggleClickHandler= ()=>{
+    this.setState({SideDrawerOpen: false}); // for closing the sidebar
+  }
+  
   
   render(){
+    let adrawer;  
+  if(this.state.SideDrawerOpen){
+    adrawer=<SideDrawer closeClickHandler={this.closeToggleClickHandler}/>;
+  }
   
   return (
-    <Router history={browserHistory}>
-        <Route path={"/"} component={Landing}/>
-        <Route path={"/events"} component={Events}/>
-        
-
-    </Router>
+    <div className="app">
+     <Toolbar  drawerClickHandler={this.drawerToggleClickHandler}/>
+     
+     {adrawer}
+    <BrowserRouter >
+        <Route exact path="/" component={Landing}/>
+        <Route path="/events" component={Events}/>
+        <Route path="/execom" component={Execom}/>
+        <Route path="/achievements" component={Achievements}/>
+        <Route path="/gallery" component={Gallery}/>
+    </BrowserRouter>
+    <Footer/>
+    </div>
   );
   }
 }
