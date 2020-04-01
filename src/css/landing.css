@@ -2,18 +2,38 @@ body{
     margin:0;
     padding:0;
     background-color:rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+}
+.landing{
+    height: 100vh;
+    width: 100%;
 }
 
-.navbar{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
+<<<<<<< HEAD
 .parallax{
+=======
+
+.carousel{
+>>>>>>> 155be72aaddf6b3db3b8824c1104d8b59081dedc
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
+    margin-bottom:5rem;
+}
+
+.gallery{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-bottom:5rem;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
 }
