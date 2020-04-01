@@ -3,7 +3,7 @@ import "../css/footer.css"
 
 function Landing() {
   return (
-    <div id="top_margin" class=" light-blue darken-4">
+    <div id="top_margin" class=" light-blue darken-4 white-text">
 
     <div className='contact container' id="centre_mobile">
       <div className="row" id="contact">
