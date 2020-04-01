@@ -5,12 +5,13 @@ import React from 'react';
 ///import TestNav from './TestNav';
 import Photos from './Gallery.js';
 import Footer from './Footer.js';
-import "../css/landing.css";
   import Missionvision from './Missionvision.js'
 import About from './About.js'
 import 'materialize-css/dist/css/materialize.min.css';
 
 import Title from './Title/Title.js';
+
+//import Events from './Events/Events.js'
 
 
 const Landing = props =>{
@@ -28,4 +29,3 @@ const Landing = props =>{
 }
 
 export default Landing;
-
