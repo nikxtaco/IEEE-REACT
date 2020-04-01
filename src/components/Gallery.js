@@ -24,7 +24,7 @@ const Gallery = () => {
 						<img style={{ 'background-size':'cover' , 'height':'50vh', 'margin':'auto'}} src={require("../assets/7.jpg")} alt="" class="materialboxed responsive-img mobile_space"  id="curve_border"/>
 					</div>
 
-					</div>
+				</div>
 				<div class="row">
 
 					<div class="col s12 m4" id="bottom_margin">

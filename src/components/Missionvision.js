@@ -4,8 +4,11 @@ const Missionvision = () => {
     var para = {
         "font-size": "17px"
     }
+    var just = {
+        "text-align": "center"
+    }
     return (
-    <div className="row light-blue darken-4">
+    <div style={just} className="row light-blue darken-4">
         <div className="col s12 m4">
             <div className="light-blue darken-4">
             <i className="large material-icons white-text">priority_high</i>
@@ -15,7 +18,7 @@ const Missionvision = () => {
                 </div>
             </div>
         </div>
-        <div className="col s12 m4">
+        <div className="col s12 m12 l4">
             <div className="light-blue darken-4">
                 <i className="large material-icons white-text">visibility</i>
                 <div className="container white-text">
@@ -24,13 +27,12 @@ const Missionvision = () => {
                 </div>
             </div>
         </div>
-        <div className="col s12 m4">
+        <div className="col s12 m12 l4">
             <div className="light-blue darken-4">
                 <i className="large material-icons white-text">room</i>
                 <div className="container white-text">
                     <span className="flow-text">Mission</span>
                     <p style={para}>The IEEE SB MEC takes forward the vision of IEEE by providing students a platform to enhance their technical and professional acumen.  It aims to promote interest in cutting-edge technologies and provides numerous networking opportunities to help its members along their career path. Serving as a centre for honing one’s volunteering skills, the Student Branch has promoted many of its members to the hub level and more. The SB also creates opportunities  for the budding technocrats to learn, share and explore new possibilities in the field of technology</p>
-                    <p></p>
                 </div>
             </div>
         </div>

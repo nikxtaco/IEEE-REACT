@@ -10,12 +10,8 @@ body{
     width: 100%;
 }
 
-<<<<<<< HEAD
-.parallax{
-=======
 
 .carousel{
->>>>>>> 155be72aaddf6b3db3b8824c1104d8b59081dedc
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;

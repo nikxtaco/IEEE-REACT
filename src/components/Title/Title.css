@@ -1,0 +1,20 @@
+.title{
+   
+    
+        margin-top: -117px;
+        padding-top: 210px;
+        padding-bottom: 72px;
+        border-bottom-left-radius: 200px;
+        background-color: #f3f7fb;
+        background-image: url("https://uploads-ssl.webflow.com/5c6c1ec60332034fc43cc61a/5e60fed001686026a395a5f7_Group%2040749%20(3).svg");
+        background-position: 100% 0;
+        background-size: contain;
+    
+}
+
+.jumbo{
+    background-color: white;
+}
+.cont{
+    background-color: white ;
+}
