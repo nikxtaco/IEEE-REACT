@@ -1,7 +1,7 @@
 import React from 'react';
 import "./SideDrawer.css";
 import 'materialize-css/dist/css/materialize.min.css';
-
+import { Link } from "react-router-dom"
 
 const sideDrawer= props=>(
 
@@ -12,12 +12,10 @@ const sideDrawer= props=>(
             </button>
         </div>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Team</a></li>
-            <li><a href="/">Achievements</a></li>
-            <li><a href="/">Gallery</a></li>
-            <li><a href="/">Contact</a></li>
+        <li><Link to="/" activeStyle={{color:"blue"}}>Home</Link></li>
+                        <li><Link to="/execom" activeStyle={{color:"blue"}}>Execom</Link></li>
+                        <li><Link to="/achievements" activeStyle={{color:"blue"}}>Achievements</Link></li>
+                        <li><Link to="/gallery" activeStyle={{color:"blue"}}>Gallery</Link></li>
         </ul>
     </nav>
 
