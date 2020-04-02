@@ -12,10 +12,11 @@ const sideDrawer= props=>(
             </button>
         </div>
         <ul>
-        <li><Link to="/" activeStyle={{color:"blue"}}>Home</Link></li>
-                        <li><Link to="/execom" activeStyle={{color:"blue"}}>Execom</Link></li>
-                        <li><Link to="/achievements" activeStyle={{color:"blue"}}>Achievements</Link></li>
-                        <li><Link to="/gallery" activeStyle={{color:"blue"}}>Gallery</Link></li>
+            <li><Link to="/" activeStyle={{color:"blue"}}>Home</Link></li>
+            <li><Link to="/execom" activeStyle={{color:"blue"}}>Execom</Link></li>
+            <li><Link to="/achievements" activeStyle={{color:"blue"}}>Achievements</Link></li>
+            <li><Link to="/gallery" activeStyle={{color:"blue"}}>Gallery</Link></li>
+            <li><Link to="/events" activeStyle={{color:"blue"}}>Events</Link></li>
         </ul>
     </nav>
 

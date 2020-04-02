@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Events.css"
-
+import events from "./events.json"
 const data = [
   {   
       "type":"mainexecom",
@@ -73,7 +73,7 @@ const data = [
       ],
 }]
  
-function Events() {
+function Event() {
 
   return (
     <div>
@@ -81,7 +81,7 @@ function Events() {
       <div class="row">
 
         {
-          data.map((item) => <div>
+          events.map((item) => <div>
 
             <ul>
               {
@@ -114,4 +114,4 @@ function Events() {
 
 
 
-export default Events;
+export default Event;
