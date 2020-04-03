@@ -1,12 +1,16 @@
 import React , { Component } from 'react';
 import Toolbar from './components/Toolbar/Toolbar'
 import Landing from './components/Landing.js';
-// import Execom from './components/Execom/Execom.js';
 import './App.css';
+import Execom from './components/Execom/Execom.js'
+import Events from  './components/Events/Events.js'
+import Contacts from  './components/Contacts/Contacts.js'
+import Achievements from './components/Achievements/Achievements.js'
 import SideDrawer from './components/SideDrawer/SideDrawer.js'
-//import backdrop from './components/Backdrop/Backdrop.js'
-
-
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Footer from './components/Footer.js' 
+import Gallery from './components/Gallery.js'
+import NotFound from './components/NotFoundPage/NotFoundPage.js'
 class App extends Component {
   state={
     SideDrawerOpen: false
@@ -20,22 +24,33 @@ class App extends Component {
   closeToggleClickHandler= ()=>{
     this.setState({SideDrawerOpen: false}); // for closing the sidebar
   }
+  
+  
   render(){
-  let adrawer;  
+    let adrawer;  
   if(this.state.SideDrawerOpen){
     adrawer=<SideDrawer closeClickHandler={this.closeToggleClickHandler}/>;
   }
   
   return (
-    <div className="App" id="first">
+    <div className="app">
+    <BrowserRouter >
      <Toolbar  drawerClickHandler={this.drawerToggleClickHandler}/>
      
      {adrawer}
-
-      <div>
-          {/* <Execom /> */}
-          <Landing />
-      </div> 
+    
+    <Switch>
+        <Route exact path="/" component={Landing}/>
+        <Route path="/events" component={Events}/>
+        <Route path="/execom" component={Execom}/>
+        <Route path="/achievements" component={Achievements}/>
+        <Route path="/gallery" component={Gallery}/>
+        <Route path="*" component={NotFound} />
+      </Switch>
+    </BrowserRouter>
+    <div className="footer">
+      <Footer/>
+      </div>
     </div>
   );
   }

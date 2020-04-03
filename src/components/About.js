@@ -6,12 +6,16 @@ const About = () => {
   var stcard = {
     "border-radius" : "30px"
   }
+  var stimage = {
+    "border-top-left-radius" : "30px",
+    "border-top-right-radius" : "30px"
+  }
     return(
    <div className="row">
       <div className="col s12 m12 l6">
          <div style={stcard} className="card light-blue darken-4">
-           <div style={stcard} className="card-image">
-             <img style={stcard} src={mec} alt=""/>
+           <div style={stimage} className="card-image">
+             <img style={stimage} src={mec} alt=""/>
              <span className="card-title">About MEC</span>
            </div>
            <div className="card-content white-text">
@@ -21,8 +25,8 @@ const About = () => {
        </div>
        <div className="col s12 m12 l6">
          <div style={stcard} className="card light-blue darken-4">
-            <div style={stcard} className="card-image">
-             <img style={stcard} src={sb} alt=""/>
+            <div style={stimage} className="card-image">
+             <img style={stimage} src={sb} alt=""/>
             <div/>
              <span className="card-title">About SB</span>
            </div>
