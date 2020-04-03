@@ -1,6 +1,7 @@
 import React from 'react';
 import Photos from './Gallery.js';
 import Missionvision from './Missionvision.js'
+
 import About from './About.js'
 import 'materialize-css/dist/css/materialize.min.css';
 
