@@ -14,16 +14,17 @@
 }
 
 .side-drawer a{
-    color: black;
+    color: white;
     z-index: 200;
     text-decoration: none;
 }
 .side-drawer a:hover,
 .side-drawer a:active{
-    color: blue;
+    color: #01579b;
+    background: white;
 }
 .side-drawer ul{
-    color: black;
+    color: white;
     z-index: 200;
     position: relative;
     height: 100vh;
@@ -41,4 +42,3 @@
     cursor: pointer;
     float: left;
 }
-

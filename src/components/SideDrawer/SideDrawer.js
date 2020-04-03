@@ -5,10 +5,10 @@ import { Link } from "react-router-dom"
 
 const sideDrawer= props=>(
 
-    <nav className="side-drawer">
+    <nav className="side-drawer light-blue darken-4 white-text">
         <div className="close_sd">
-            <button className="closer" onClick={props.closeClickHandler}>
-                <i className="material-icons itag">chevron_right</i>
+            <button className="waves-effect waves-white btn-flat" onClick={props.closeClickHandler}>
+                <i className="material-icons itag white-text">chevron_right</i>
             </button>
         </div>
         <ul>
