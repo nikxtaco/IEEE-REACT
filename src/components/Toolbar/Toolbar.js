@@ -1,5 +1,6 @@
 import React from  'react';
-import './Toolbar.css'
+import './Toolbar.css';
+import 'materialize-css/dist/css/materialize.min.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton.js'
 import { Link } from "react-router-dom"
 
@@ -7,7 +8,7 @@ const toolbar= props =>(
     <header className="toolbar_a">
         <nav className="toolbar_navigation">
            
-            <div className="toolbar_logo"><a href="/">LOGO</a></div>
+            <div className="toolbar_logo"><a href="/"><img style={{"width": "200px"}} className="responsive-img" src={require("../../assets/SB_logo.png")} /></a></div>
             <div className="hi"/>
                 <div className="toolbar_navigation_items">
                     <ul>

@@ -3,12 +3,19 @@ import 'materialize-css/dist/css/materialize.min.css';
 import mec from '../MEC.jpeg'
 import sb from '../SB.jpg'
 const About = () => {
+  var stcard = {
+    "border-radius" : "30px"
+  }
+  var stimage = {
+    "border-top-left-radius" : "30px",
+    "border-top-right-radius" : "30px"
+  }
     return(
    <div className="row">
-        <div className="col s6">
-         <div className="card light-blue darken-4">
-           <div className="card-image">
-             <img src={mec} alt=""/>
+      <div className="col s12 m12 l6">
+         <div style={stcard} className="card light-blue darken-4">
+           <div style={stimage} className="card-image">
+             <img style={stimage} src={mec} alt=""/>
              <span className="card-title">About MEC</span>
            </div>
            <div className="card-content white-text">
@@ -16,10 +23,11 @@ const About = () => {
            </div>
          </div>
        </div>
-       <div className="col s6">
-         <div className="card light-blue darken-4">
-           <div className="card-image">
-             <img src={sb} alt=""/>
+       <div className="col s12 m12 l6">
+         <div style={stcard} className="card light-blue darken-4">
+            <div style={stimage} className="card-image">
+             <img style={stimage} src={sb} alt=""/>
+            <div/>
              <span className="card-title">About SB</span>
            </div>
            <div className="card-content white-text">

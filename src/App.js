@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import Toolbar from './components/Toolbar/Toolbar'
-import Landing from './components/Landing.js'
+import Landing from './components/Landing.js';
 import './App.css';
 import Execom from './components/Execom/Execom.js'
 import Events from  './components/Events/Events.js'
@@ -48,7 +48,9 @@ class App extends Component {
         <Route path="*" component={NotFound} />
       </Switch>
     </BrowserRouter>
-    <Footer/>
+    <div className="footer">
+      <Footer/>
+      </div>
     </div>
   );
   }
