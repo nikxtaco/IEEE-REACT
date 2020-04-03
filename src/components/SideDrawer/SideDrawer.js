@@ -7,7 +7,7 @@ const sideDrawer= props=>(
 
     <nav className="side-drawer light-blue darken-4 white-text">
         <div className="close_sd">
-            <button className="waves-effect waves-white btn-flat" onClick={props.closeClickHandler}>
+            <button className="closer light-blue darken-4 waves-effect" onClick={props.closeClickHandler}>
                 <i className="material-icons itag white-text">chevron_right</i>
             </button>
         </div>
