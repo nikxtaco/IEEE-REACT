@@ -10,8 +10,9 @@ const NotFoundPage= () => {
   
     }, [])
     return (
-      <div class="parallax-container">
-        <div class="parallax"><img style={{"height": "100%", "width": "100%"}} className="responsive-img" src={"https://cdn.dribbble.com/users/2446071/screenshots/6903453/404.gif"} /></div>
+      <div className="parallax-container hello">
+        <div className="parallax"><img style={{"height": "100%", "width": "100%"}} className="responsive-img" src={"https://cdn.dribbble.com/users/2446071/screenshots/6903453/404.gif"} /></div>
+        <a className="waves-effect waves-light btn"><i className="material-icons left">arrow_back</i>Back</a>
       </div>
     );
 }
