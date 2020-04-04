@@ -1,12 +1,21 @@
 import React from  'react';
-import './Title.css'
+import { useEffect } from 'react';
+import './Title.css';
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css/dist/js/materialize.min.js';
+import image from '../../neon.jpg';
 
-const title = props =>{
+const Parallax = () => {
+    useEffect(() => {
+		let parallel = document.querySelector('.parallax');
+		M.Parallax.init(parallel, {});
+
+	}, [])
     return(
-        <div className="title">
-           
-        </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src={image} /></div>
+            </div>
     )
 }
 
-export default title;
+export default Parallax;
