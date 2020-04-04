@@ -35,3 +35,7 @@ body{
     grid-row-start: 4;
     grid-row-end: 4;
 }
+/* .Title{
+    background-image: url("../../assets/parallax.jpg");
+    background-attachment: fixed;
+} */

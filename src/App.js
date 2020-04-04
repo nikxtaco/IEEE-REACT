@@ -11,6 +11,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Footer from './components/Footer.js' 
 import Gallery from './components/Gallery.js'
 import NotFound from './components/NotFoundPage/NotFoundPage.js'
+// import Cred from './components/IEEE-credentials/credentials.js'
 class App extends Component {
   state={
     SideDrawerOpen: false
@@ -34,6 +35,9 @@ class App extends Component {
   
   return (
     <div className="app">
+    {/* <div className="credentials">
+      <Cred/>
+    </div> */}
     <BrowserRouter >
      <Toolbar  drawerClickHandler={this.drawerToggleClickHandler}/>
      
@@ -43,14 +47,12 @@ class App extends Component {
         <Route exact path="/" component={Landing}/>
         <Route path="/events" component={Events}/>
         <Route path="/execom" component={Execom}/>
-        <Route path="/achievements" component={Achievements}/>
+        <Route path="/achievements" component={Achievements}/>    
         <Route path="/gallery" component={Gallery}/>
         <Route path="*" component={NotFound} />
       </Switch>
     </BrowserRouter>
-    <div className="footer">
       <Footer/>
-      </div>
     </div>
   );
   }

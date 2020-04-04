@@ -1,21 +1,71 @@
+
+.meta-nav {
+    min-height: 40px;
+    background: #01579b;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.meta-ieee-logo {
+      margin: -2px 0px 0px 0px;
+    float:right;
+}
+
+@media (max-width: 800px) {
+.meta-nav {
+    min-height: 100px;
+    background: #01579b;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+.meta-ieee-logo {
+      padding: 20px 0px 0px 0px;
+    float:right;
+}
+}
+
+
+#ieee-meta-a {
+    font-family: inherit;
+    font-size: .9em;
+    line-height: 125%;
+    border: 0;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+    padding: 11px 36px;
+}
+
+#ieee-meta-a a:link, #ieee-meta-a a:visited, #ieee-meta-a a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+#ieee-meta-a a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .toolbar_a{
 
     position: fixed;
     width: 100%;
     left: 0;
-    top: 0;
-    background: white;
+    top: 40px;
+    background: #01579b;
     height: 56px;
     z-index:5;
     padding: 4rem;
     padding-bottom: 2rem;
     
-    
 
 
 }
 .toolbar_navigation{
-    background-color: white;
+    background-color: #01579b;
     display: flex;
     height: 100%;
     align-items: center;
@@ -23,12 +73,13 @@
     box-shadow: none;
     
 }
+
 .drawer_toggle{
     align-items: center;
     margin-top: 0.5rem;
 }
 .toolbar_logo a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 2rem;
     margin-left: 0.5rem;
@@ -38,7 +89,7 @@
     flex:1;
 }
 .toolbar_navigation_items ul{
-    color: black;
+    color: white;
     text-decoration: none;
     list-style: none;
     font-size: 1.25rem;
@@ -52,19 +103,20 @@
      
 }
 .toolbar_navigation_items a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 
 .toolbar_navigation_items a:hover{
-    color: orange;
+    color: #01579b;
     text-decoration: none;
+    background: white;
 
 }
 
 .toolbar_navigation_items a:active{
-    color: red;
+    color: #01579b;
     text-decoration: none;
 }
 
@@ -78,8 +130,8 @@
         position: fixed;
         width: 100%;
         left: 0;
-        top: 0;
-        background: white;
+        top: 40px;
+        background: #01579b;
         height: 56px;
         z-index:5;
         padding: 2px;
