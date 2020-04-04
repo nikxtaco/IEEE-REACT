@@ -21,7 +21,6 @@ class EventHandler extends Component{
       
       render(){
         let MianEvents; 
-        let Indi; 
       if(this.state.ShowMainEvents){
         MianEvents=<MainPage eventClickHandler={this.eventToggleClickHandler}/>;
       }
@@ -41,4 +40,3 @@ class EventHandler extends Component{
     }
     
     export default EventHandler;
-}
