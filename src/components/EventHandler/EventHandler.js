@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
 import events from "../Events/events.json"
+import MainPage from "../Events/Events.js"
+import IndiEvents from "../IndiEvents/IndiEvents.js"
 
 class EventHandler extends Component{
     state={
-        ShowMainEvents: true
+        ShowMainEvents: true,
+        index: 0
       }
       
-      drawerToggleClickHandler = () =>{
+      eventToggleClickHandler = () =>{
         this.setState((prevState)=>{
           return {ShowMainEvents: !prevState.ShowMainEvents}; // for opening the sidebar
         });
       };
       closeToggleClickHandler= ()=>{
-        this.setState({SideDrawerOpen: false}); // for closing the sidebar
+        this.setState({ShowMainEvents: false}); // for closing the sidebar
       }
       
       
       render(){
-        let adrawer;  
-      if(this.state.SideDrawerOpen){
-        adrawer=<SideDrawer closeClickHandler={this.closeToggleClickHandler}/>;
+        let MianEvents; 
+        let Indi; 
+      if(this.state.ShowMainEvents){
+        MianEvents=<MainPage eventClickHandler={this.eventToggleClickHandler}/>;
+      }
+      else{
+        Indi=<IndiEvents/>
       }
       
       return (
