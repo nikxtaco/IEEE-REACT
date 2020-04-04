@@ -15,7 +15,7 @@ class EventHandler extends Component{
         });
       };
       closeToggleClickHandler= ()=>{
-        this.setState({ShowMainEvents: false}); // for closing the sidebar
+        this.setState({ShowMainEvents: false}); 
       }
       
       
@@ -26,15 +26,14 @@ class EventHandler extends Component{
         MianEvents=<MainPage eventClickHandler={this.eventToggleClickHandler}/>;
       }
       else{
-        Indi=<IndiEvents/>
+        MianEvents=<IndiEvents closeHandler={this.closeToggleClickHandler} ind={this.state.index}/>
       }
       
       return (
         <div className="app">
   
-         <Toolbar  drawerClickHandler={this.drawerToggleClickHandler}/>
          
-         {adrawer}
+         {MianEvents}
         
         </div>
       );
