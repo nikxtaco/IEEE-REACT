@@ -9,7 +9,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 const drawerToggleButton= props =>(
     <button className="toggle_button transparent waves-effect" onClick={props.click}>
         {/* <a className="waves-effect waves-white btn-flat"> */}
-           <i className="material-icons white-text">menu</i>
+           <i className="material-icons light-blue-text text-darken-4">menu</i>
         {/* </a> */}
     </button>
 )

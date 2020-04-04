@@ -1,8 +1,8 @@
 
 .meta-nav {
     min-height: 40px;
-    background: #01579b;
-    color: #ffffff;
+    background: white;
+    color: #01579b;
     padding: 0px;
     margin: 0px;
 }
@@ -16,8 +16,8 @@
 @media (max-width: 800px) {
 .meta-nav {
     min-height: 100px;
-    background: #01579b;
-    color: #ffffff;
+    background: white;
+    color: #01579b;
     padding: 0px;
     margin: 0px;
 }
@@ -34,18 +34,18 @@
     line-height: 125%;
     border: 0;
     margin: 0;
-    color: #fff;
+    color: #01579b;
     text-align: left;
     padding: 11px 36px;
 }
 
 #ieee-meta-a a:link, #ieee-meta-a a:visited, #ieee-meta-a a:active {
-    color: #fff;
+    color: #01579b;
     text-decoration: none;
 }
 
 #ieee-meta-a a:hover {
-    color: #fff;
+    color: #01579b;
     text-decoration: underline;
 }
 
@@ -55,7 +55,7 @@
     width: 100%;
     left: 0;
     top: 40px;
-    background: #01579b;
+    background: white;
     height: 56px;
     z-index:5;
     padding: 4rem;
@@ -65,7 +65,7 @@
 
 }
 .toolbar_navigation{
-    background-color: #01579b;
+    background-color: white;
     display: flex;
     height: 100%;
     align-items: center;
@@ -79,7 +79,7 @@
     margin-top: 0.5rem;
 }
 .toolbar_logo a{
-    color: white;
+    color: #01579b;
     text-decoration: none;
     font-size: 2rem;
     margin-left: 0.5rem;
@@ -89,7 +89,7 @@
     flex:1;
 }
 .toolbar_navigation_items ul{
-    color: white;
+    color: #01579b;
     text-decoration: none;
     list-style: none;
     font-size: 1.25rem;
@@ -103,20 +103,20 @@
      
 }
 .toolbar_navigation_items a{
-    color: white;
+    color: #01579b;
     text-decoration: none;
 }
 
 
 .toolbar_navigation_items a:hover{
-    color: #01579b;
+    color: white;
     text-decoration: none;
-    background: white;
+    background: #01579b;
 
 }
 
 .toolbar_navigation_items a:active{
-    color: #01579b;
+    color: white;
     text-decoration: none;
 }
 
@@ -131,7 +131,7 @@
         width: 100%;
         left: 0;
         top: 40px;
-        background: #01579b;
+        background: white;
         height: 56px;
         z-index:5;
         padding: 2px;
