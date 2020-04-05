@@ -5,6 +5,7 @@ import events from '../Events/events.json'
 
 function IndiEvents(props){
    events.map((no,i)=>{
+       
             
             
    

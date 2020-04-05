@@ -6,7 +6,8 @@ import IndiEvents from "../IndiEvents/IndiEvents.js"
 class EventHandler extends Component{
     state={
         ShowMainEvents: true,
-        index: 0
+        index: 0,
+        
       }
       
       eventToggleClickHandler = () =>{
