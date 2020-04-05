@@ -24,15 +24,15 @@ const toolbar= props =>(
     <header className="toolbar_a">
         <nav className="toolbar_navigation">
            
-            <div className="toolbar_logo"><a href="/"><img style={{"width": "200px", "padding-top": "20px"}} className="responsive-img" src={require("../../assets/SB_logo_white.png")} /></a></div>
+            <div className="toolbar_logo"><a href="/"><img style={{"width": "200px", "padding-top": "20px"}} className="responsive-img" src={require("../../assets/SB_logo.png")} /></a></div>
             <div className="hi"/>
                 <div className="toolbar_navigation_items">
                     <ul>
-                        <li><Link to="/" activeStyle={{color:"blue"}}>Home</Link></li>
-                        <li><Link to="/execom" activeStyle={{color:"blue"}}>Execom</Link></li>
-                        <li><Link to="/achievements" activeStyle={{color:"blue"}}>Achievements</Link></li>
-                        <li><Link to="/gallery" activeStyle={{color:"blue"}}>Gallery</Link></li>
-                        <li><Link to="/events" activeStyle={{color:"blue"}}>Events</Link></li>
+                        <li><Link to="/" activeStyle={{color:"white"}}>Home</Link></li>
+                        <li><Link to="/execom" activeStyle={{color:"white"}}>Execom</Link></li>
+                        <li><Link to="/achievements" activeStyle={{color:"white"}}>Achievements</Link></li>
+                        <li><Link to="/gallery" activeStyle={{color:"white"}}>Gallery</Link></li>
+                        <li><Link to="/events" activeStyle={{color:"white"}}>Events</Link></li>
                     </ul>
                 </div>
                 <div className="drawer_toggle">

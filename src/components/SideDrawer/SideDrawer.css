@@ -14,17 +14,18 @@
 }
 
 .side-drawer a{
-    color: white;
+    color: #01579b;
     z-index: 200;
     text-decoration: none;
+    width: 100%;
 }
 .side-drawer a:hover,
 .side-drawer a:active{
-    color: #01579b;
-    background: white;
+    color: white;
+    background: #01579b;
 }
 .side-drawer ul{
-    color: white;
+    color: #01579b;
     z-index: 200;
     position: relative;
     height: 100vh;
@@ -32,12 +33,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     
 }
 .closer{
     border: none;
-    background-color: white;
-    align-items: center;
+    background-color: #01579b;
+    align-items: left;
     background: transparent;
     cursor: pointer;
     float: left;
