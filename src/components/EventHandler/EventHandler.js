@@ -10,7 +10,8 @@ class EventHandler extends Component{
         
       }
       
-      eventToggleClickHandler = () =>{
+      eventToggleClickHandler = (ind) =>{
+        this.setState({index: ind});
         this.setState((prevState)=>{
           return {ShowMainEvents: !prevState.ShowMainEvents}; // for opening the sidebar
         });

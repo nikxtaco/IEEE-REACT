@@ -3,24 +3,8 @@ import "./Events.css"
 import events from "./events.json"
 
 
-class EventHandler extends Component{
-  state={
-      ShowMainEvents: true,
-      index: 0,
-      
-    }
-    
-    eventToggleClickHandler = () =>{
-      this.setState((prevState)=>{
-        return {ShowMainEvents: !prevState.ShowMainEvents}; // for opening the sidebar
-      });
-    };
-    closeToggleClickHandler= ()=>{
-      this.setState({ShowMainEvents: false}); 
-    }
 
-    render(){
-    function Event(props) {
+function Event(props) {
 
       return (
         <div>
@@ -40,7 +24,7 @@ class EventHandler extends Component{
         <div class="col s12 m4">
           <div class="card small">
             <div class="card-image">
-              <img src="images/sample-1.jpg"/>
+              <img src="images/sample-1.jpg" />
               <span class="card-title">Card Title</span>
             </div>
             <div class="card-content">
@@ -48,7 +32,7 @@ class EventHandler extends Component{
               I am convenient because I require little markup to use effectively.</p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a onClick={console.log(i)}>This is a link</a>
             </div>
           </div>
         </div>
@@ -61,9 +45,39 @@ class EventHandler extends Component{
             }
           </div>
         </div>
+     
       );
     };
-    function IndiEvents(props){
+
+
+   
+  export default Event;
+
+
+/*
+
+class EventHandler extends Component{
+  state={
+      ShowMainEvents: true,
+      index: 0,
+      
+    }
+    
+    eventToggleClickHandler = (ind) =>{
+      this.setState({index: ind})
+      this.setState((prevState)=>{
+        return {ShowMainEvents: !prevState.ShowMainEvents}; // for opening the sidebar
+      });
+    };
+    closeToggleClickHandler= ()=>{
+      this.setState({ShowMainEvents: false}); 
+    }
+
+    render(){
+*/
+
+/*
+ function IndiEvents(props){
         
    
    
@@ -90,7 +104,4 @@ class EventHandler extends Component{
     );
     }
   }
-  
-  export default EventHandler;
-
-
+  */
