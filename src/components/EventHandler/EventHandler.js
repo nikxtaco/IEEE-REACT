@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import events from "../Events/events.json"
-import MainPage from "../Events/Events.js"
+//import MainPage from "../Events/Events.js"
 import IndiEvents from "../IndiEvents/IndiEvents.js"
 
 class EventHandler extends Component{
@@ -34,7 +34,7 @@ class EventHandler extends Component{
             <div class="row">
       
               {
-                events.map((item, i) => <div>
+                events.map((item, i) => <div key={events.id}>
       
                   <ul>
                     {
@@ -50,7 +50,7 @@ class EventHandler extends Component{
                 <p>{item.date}</p>
               </div>
               <div class="card-action">
-                <a onClick={props.eventClickHandler(item)}>View Details</a>
+                <a onClick={this.eventToggleClickHandler(item)}>View Details</a>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ class EventHandler extends Component{
         MianEvents=<IndiEvents closeHandler={this.closeToggleClickHandler} activeitem={this.state.activeitem}/>
       }
       else{
-        MianEvents=<MainPage eventClickHandler={this.eventToggleClickHandler}/>;
+        MianEvents=this.renderItems();
       }
       
       return (
