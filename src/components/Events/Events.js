@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "./Events.css"
 import events from "./events.json"
 
 

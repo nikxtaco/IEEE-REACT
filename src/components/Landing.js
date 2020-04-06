@@ -3,6 +3,8 @@ import Photos from './Gallery.js';
 import Missionvision from './Missionvision.js'
 
 import About from './About.js'
+
+import Intro from './Intro.js'
 import 'materialize-css/dist/css/materialize.min.css';
 
 
@@ -13,7 +15,9 @@ const Landing = props =>{
   return (
     <body>
     <div className="landing">
-      <div className="Title"><Parallax/></div>
+    {//  <div className="Title"><Parallax/></div>
+    }
+      <div className="intro"><Intro/></div>
       <div className="mission"><Missionvision/></div>
       <div className="about"><About/></div>
       <div className="gallery"><Photos/></div>
