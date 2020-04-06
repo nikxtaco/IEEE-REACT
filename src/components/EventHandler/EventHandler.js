@@ -18,8 +18,8 @@ class EventHandler extends Component{
         
       }
       
-      eventToggleClickHandler = (obj) =>{
-        this.setState({activeitem:{obj}})
+      eventToggleClickHandler = obj =>{
+        this.setState({activeitem:obj})
         this.setState((prevState)=>{
           return {ShowMainEvents: !prevState.ShowMainEvents}; 
         });
