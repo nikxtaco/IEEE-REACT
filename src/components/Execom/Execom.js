@@ -2,7 +2,6 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 const Execom = () =>{
     var pad = {
-        "padding": "100 px"
     }
     // var Heading = {
     //     "font-size": "40 px"
@@ -11,7 +10,7 @@ const Execom = () =>{
         <div>
         <div className="row light-blue-text text-darken-4">
         <div>
-        <div style={{"padding-top": "100px", "text-align": "center", "padding-bottom": "100px", "padding-right": "50px", "padding-left": "50px"}} className="section">
+        <div style={{ "text-align": "center", "padding-bottom": "100px", "padding-right": "50px", "padding-left": "50px"}} className="">
             <h1>Student Branch</h1>
 
             <div class="divider"></div>
