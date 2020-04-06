@@ -3,6 +3,7 @@ import img1 from "../assets/ieee-logo.png"
 import img2 from "../assets/parallax.png"
 import "../css/intro.css"
 
+
 function Intro() {
   return (
     <div id="intro">
