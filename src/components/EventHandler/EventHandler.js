@@ -5,21 +5,23 @@ import IndiEvents from "../IndiEvents/IndiEvents.js"
 
 class EventHandler extends Component{
     state={
-        ShowMainEvents: true,
         ShowIndiEvents: false,
-        index:0,
-        type:"cs",
-        title:"name of event",
-        date:"20 november 2019",
-        location:"knowhere",
-        img_src:"somesource",
-        description:"ths is fnkn f ljisnlfblihbncilbncs" 
+        activeitem:{
+          index:0,
+          type:"cs",
+          title:"name of event",
+          date:"20 november 2019",
+          location:"knowhere",
+          img_src:"somesource",
+          description:"ths is fnkn f ljisnlfblihbncilbncs" 
+        }
         
       }
       
       eventToggleClickHandler = (obj) =>{
+        this.setState({activeitem:{obj}})
         this.setState((prevState)=>{
-          return {ShowMainEvents: !prevState.ShowMainEvents}; // for opening the sidebar
+          return {ShowMainEvents: !prevState.ShowMainEvents}; 
         });
       };
       closeToggleClickHandler= ()=>{
@@ -29,11 +31,11 @@ class EventHandler extends Component{
       
       render(){
         let MianEvents; 
-      if(this.state.ShowMainEvents){
-        MianEvents=<MainPage eventClickHandler={this.eventToggleClickHandler}/>;
+      if(this.state.ShowIndiEvents){
+        MianEvents=<IndiEvents closeHandler={this.closeToggleClickHandler} ind={this.state.index}/>
       }
       else{
-        MianEvents=<IndiEvents closeHandler={this.closeToggleClickHandler} ind={this.state.index}/>
+        MianEvents=<MainPage eventClickHandler={this.eventToggleClickHandler}/>;
       }
       
       return (
