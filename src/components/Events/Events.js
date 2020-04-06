@@ -7,7 +7,6 @@ function Event(props) {
 
       return (
         <div>
-          <h1>Events</h1>
           <div class="row">
     
             {
@@ -17,14 +16,11 @@ function Event(props) {
                   {
                   <li>
         
-        
-      
-        
         <div class="col s12 m4">
           <div class="card small">
             <div class="card-image">
-              <img src="images/sample-1.jpg" />
-              <span class="card-title">Card Title</span>
+              <img src={require("../main1.jpg")} />
+              <span class="card-title">{item.title}</span>
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 
 const toolbar= props =>(
-    <div>
+    <div style={{"margin-bottom":"15em"}}>
     <div className="meta-nav" style={{"top": "0px", "position": "fixed", "z-index": "5", "width": "100%"}}>
 	    	<p id="ieee-meta-a">
                 <a href="https://www.ieee.org/index.html">IEEE.org</a> 
