@@ -18,7 +18,7 @@ class EventHandler extends Component{
         
       }
       
-      eventToggleClickHandler = obj =>{
+      eventToggleClickHandler = (obj) =>{
         this.setState({activeitem:obj})
         this.setState((prevState)=>{
           return {ShowMainEvents: !prevState.ShowMainEvents}; 
@@ -32,7 +32,7 @@ class EventHandler extends Component{
       render(){
         let MianEvents; 
       if(this.state.ShowIndiEvents){
-        MianEvents=<IndiEvents closeHandler={this.closeToggleClickHandler} ind={this.state.index}/>
+        MianEvents=<IndiEvents closeHandler={this.closeToggleClickHandler} activeitem={this.state.activeitem}/>
       }
       else{
         MianEvents=<MainPage eventClickHandler={this.eventToggleClickHandler}/>;
