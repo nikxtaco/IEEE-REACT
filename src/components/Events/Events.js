@@ -23,11 +23,10 @@ function Event(props) {
               <span class="card-title">{item.title}</span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <p>{item.date}</p>
             </div>
             <div class="card-action">
-              <a onClick={console.log(i)}>This is a link</a>
+              <a onClick={props.eventClickHandler(item)}>View Details</a>
             </div>
           </div>
         </div>

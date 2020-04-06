@@ -27,6 +27,46 @@ class EventHandler extends Component{
       closeToggleClickHandler= ()=>{
         this.setState({ShowMainEvents: false}); 
       }
+
+      renderItems=()=>{
+        return (
+          <div>
+            <div class="row">
+      
+              {
+                events.map((item, i) => <div>
+      
+                  <ul>
+                    {
+                    <li>
+          
+          <div class="col s12 m4">
+            <div class="card small">
+              <div class="card-image">
+                <img src={require("../main1.jpg")} />
+                <span class="card-title">{item.title}</span>
+              </div>
+              <div class="card-content">
+                <p>{item.date}</p>
+              </div>
+              <div class="card-action">
+                <a onClick={props.eventClickHandler(item)}>View Details</a>
+              </div>
+            </div>
+          </div>
+                  
+                    </li>
+                    }
+                  </ul>
+      
+                </div>)
+              }
+            </div>
+          </div>
+       
+        );
+
+      }
       
       
       render(){
