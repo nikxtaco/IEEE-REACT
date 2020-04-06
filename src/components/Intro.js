@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from "../assets/ieee-logo.png"
 import img2 from "../assets/parallax.png"
 
+
 function Intro() {
   return (
     <div id="intro">
